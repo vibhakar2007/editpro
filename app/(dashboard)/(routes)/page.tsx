@@ -1,5 +1,11 @@
+import { UserButton } from "@clerk/nextjs";
+
 export default function Home() {
   return (
-    <p className="text-3xl font-medium">Hello World</p>
+    <div className="">
+      <UserButton 
+        afterSwitchSessionUrl="/"
+      />
+    </div>
   );
 }
